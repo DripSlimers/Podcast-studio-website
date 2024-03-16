@@ -1,0 +1,73 @@
+// main: ../style.less
+
+.intro {
+	margin-top: @headerHeight + 40px;
+		
+	display: flex;
+	
+	width: 100%;
+
+	color: @white;
+
+	
+}
+
+.intro__image {
+	max-width: 65rem;
+	width: 50%;
+
+	//border_radius: 13px;
+	overflow: hidden;
+}
+.intro__content {
+	display: flex;
+	flex-direction: column;
+	
+	width: 50%;
+	padding: 0 6rem;
+	margin: 0 auto;
+
+	justify-content: center;
+}
+.intro__text {
+	font-size: 7rem;
+	line-height: 8.8rem;
+	letter-spacing: 3.2px;
+
+	margin-bottom: 7.4rem;
+
+	& span {
+		font-size: 8rem;
+		font-weight: 700;
+	}
+}
+.intro__listen {
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	
+	margin: 0;
+	flex-direction: column;
+
+	padding-left: 2.2rem;
+}
+.intro__label {
+	font-size: 1.5rem;
+	line-height: 2.4rem;
+
+	margin-bottom: 1.6rem;
+}
+.intro__list {
+	padding: 0;
+	margin: 0;
+
+	display: flex;
+	
+	list-style: none;
+}
+.intro__item {
+	width: 3.2rem;
+	height: 3.2rem;
+
+	margin-right: 1.7rem;
+}
