@@ -1,0 +1,54 @@
+// main: ../style.less
+
+.nav__list {
+	display: flex;
+	list-style-type: none;
+}
+
+.nav__item {
+	&:not(:last-child) {
+		margin-right: 4rem;
+	}
+
+}
+
+.nav__link {
+	font-size: 1.7rem;
+	
+	position: relative;
+
+	&:hover {
+		text-decoration: none;
+	}
+	
+	&:after {
+		content: "";
+		width: 0;
+		height: 1px;
+	
+		background-color: @accent;
+	
+		position: absolute;
+		bottom: -2px;
+		left: 0;
+	
+		transition: width .15s ease-out;
+	}
+
+	&:hover,
+	&--active {
+		color: @accent;
+
+		
+		&:after {
+			width: 100%;
+		}
+	}
+	
+	&--active {
+		&:after {
+			background-color: @accent;
+		}
+	}
+
+}

@@ -1,0 +1,74 @@
+// main: ../style.less
+
+.bio {
+	color: @white;
+
+	margin-bottom: 20rem;
+}
+
+.bio__inner {
+	width: 100%;
+
+	display: flex;
+	justify-content: space-around;
+}
+
+.bio__content {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.bio__button {
+	padding: 0;
+	
+	width: 11.2rem;
+	height: 11.2rem;
+	
+	border-radius: 50%;
+
+	background: @accent url(/img/bioLinkImage.png) no-repeat center;
+	
+	margin-bottom: 2rem;
+}
+
+.bio__link {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.bio__label {
+	color: @accent;
+	font-size: 1.8rem;
+	line-height: 2.7rem;
+	
+}
+.bio__name {
+	color: @white;
+	font-size: 6.5rem;
+	line-height: 7.92rem;
+	letter-spacing: 2.88px;
+
+	margin-bottom: 2.8rem;
+}
+.bio__text {
+	max-width: 55.6rem;
+
+	font-size: 2.2rem;
+	line-height: 3.3rem;
+	color: rgba(@white, 0.7);
+
+	& span {
+		display: block;
+		height: 3.3rem;
+	}
+}
+.bio__image {
+		max-width: 65rem;
+	width: 50%;
+	
+	// border-radius: 12px;
+
+	overflow: hidden;
+}
